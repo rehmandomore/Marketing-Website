@@ -271,6 +271,111 @@ const Home: NextPage = () => {
           </div>
           <button className="primary_hover mt-20">Get in touch</button>
         </div>
+        <div className="bg-[#F8F9FF] pt-28 pb-20">
+          <div className="container mx-auto flex flex-col">
+            {/* About */}
+            <div className="flex  justify-between items-center gap-10 lg:flex-row flex-col-reverse w-full">
+              <img
+                className="rounded-2xl lg:w-6/12 w-full mt-10 md:mt-0"
+                src="https://assets.website-files.com/6160c9819f1e5978b56545d6/616473a69b5350f32bb9838b_image-home-perks-marketing-template.png"
+                alt=""
+              />
+              <div className="flex flex-col">
+                <p className="text-primary text-lg">WHY JAMI PARTNERS</p>
+                <h2 className="font-bold mt-2 text-4xl">
+                  Why working with us?
+                </h2>
+                <p className="text-secondary text-lg mt-5 leading-8">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit
+                  fringilla aliquam egestas ullamcorper donec porttitor massa
+                  nullam lobortis varius ut pellentesque habitant aliquet ornare
+                  purus nulla aliquet orci consectetur non massa eu.
+                </p>
+                <ul className="mt-10 space-y-5">
+                  <li className="flex items-center">
+                    <img
+                      className="rounded-full w-8 h-8"
+                      src="https://assets.website-files.com/6160c9819f1e5978b56545d6/6168abaf530e4104348af649_icon-check-marketing-template.svg"
+                      alt=""
+                    />
+                    <p className="font-bold text-lg ml-4">Guaranteed Results</p>
+                  </li>
+                  <li className="flex items-center">
+                    <img
+                      className="rounded-full w-8 h-8"
+                      src="https://assets.website-files.com/6160c9819f1e5978b56545d6/6168abaf530e4104348af649_icon-check-marketing-template.svg"
+                      alt=""
+                    />
+                    <p className="font-bold text-lg ml-4">
+                      Team of Industry Experts
+                    </p>
+                  </li>
+                  <li className="flex items-center">
+                    <img
+                      className="rounded-full w-8 h-8"
+                      src="https://assets.website-files.com/6160c9819f1e5978b56545d6/6168abaf530e4104348af649_icon-check-marketing-template.svg"
+                      alt=""
+                    />
+                    <p className="font-bold text-lg ml-4">
+                      10+ Years of Experience
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            {/* About 2 */}
+            <div className="flex justify-between items-center lg:flex-row flex-col mt-28 gap-10">
+              <div className="flex flex-col">
+                <p className="text-primary tracking-wider text-lg">ABOUT US</p>
+                <h2
+                  className="font-bold mt-3 w-8/12 text-4xl leading-10
+                "
+                >
+                  We are like an extension of your marketing team
+                </h2>
+                <p className="text-secondary text-lg mt-4">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  habitant morbi tristique senectus et netus et.
+                </p>
+                <hr className="bg-gray-300 w-full p-[0.7px] my-10" />
+                <p className="text-secondary text-lg">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  habitant morbi tristique senectus et netus et.
+                </p>
+                <motion.button
+                  initial="hidden"
+                  whileInView="visible"
+                  transition={{ duration: 1 }}
+                  animate={{ width: 500 }}
+                  variants={{
+                    visible: { opacity: 1, scale: 1, width: 500 },
+                    hidden: { opacity: 0, scale: 0, width: 0 },
+                  }}
+                  className="primary_button w-min px-10 mt-10"
+                >
+                  About
+                </motion.button>
+              </div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.3 }}
+                variants={{
+                  visible: { opacity: 1, scale: 1 },
+                  hidden: { opacity: 0, scale: 0 },
+                }}
+              >
+                <img
+                  className="rounded-2xl"
+                  src="https://assets.website-files.com/6160c9819f1e5978b56545d6/6168a9a0530e4156348adc3c_image-about-v3-marketing-template-p-800.jpeg"
+                  alt=""
+                />
+              </motion.div>
+            </div>
+          </div>
+        </div>
       </main>
     </Layout>
   );
